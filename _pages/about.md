@@ -1,50 +1,31 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
-excerpt: "About me"
+title: "欢迎来到我的博客！"
+excerpt: "About blog"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+听说大佬都应该有个自己的博客[狗头]，那我也整一个来玩玩吧。盈利为目的（当然如果你想给钱的话没问题）的主要由记录和分享学习过程遇到的问题，经验总结，奇怪见闻，阅读笔记，有趣的资源，小小科普和用于吹水的个人博客。博主是谁？博主的称为张文涛，在这鱼龙混杂充满未知的互联网里各种机缘巧合取得，这又是说来话长了，到底叫什么其实也不妨碍交流。
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+建造博客有六个原因。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+其一，前言也提到了，貌似大佬都应该有个自己的博客，这当然也不是说我就是大佬，对于真正的技术大佬来说我只是菜的不行的萌新的萌新，说通过构建博客只是表明下我有个成为大佬的心而已，也使我能更好的朝着这个目标前进，同时使这个博客成为大家监督我的一个平台，从而来给我一定的外部压力，防止很快就咕咕咕了。
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+第二，就是我博客首页的那句话“信息唯有分享才有意义”，例如有一个作家，写了一本非常完美的书，但不出版，也不受他人阅读，那这本书的价值何在，跟没写有什么区别。信息被创造的本质目的就是分享，不管是动物间的信息交流还是计算机间的数据交互，其目的都是如此，信息只有被多多的人所获得了才能更好地体现他的价值，我这个博客也是这个目的，把我所得到的信息分享出来体现出来的价值。这一理念也是被21世纪的新“宗教”数据主义所推崇的。
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+可能到这里又会有人问，不是有微博，知乎，简书，CSDN之类的平台可以分享信息吗，为什么还要多此一举建造一个博客？
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+是的，这些都是很好的信息共享平台，却少了一种东西，那就是掌控感。
 
-**Markdown generator**
+这好样的'房子明明可以租为什么还要买房子，我住租的房子不也是舒舒服服的吗？'可租的房子毕竟是别人家的，我并不能随心所欲的去改造它，还要遵守各种限制。我建造博客也是以这样的想法的，博客是我自己的，我想怎么装饰我的网站就怎么装饰，我想用什么主题装就对了，有那里不满意了我就改它代码，不想搞了我就直接删除库跑路。
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+第四，在建造和维护博客的过程中，我可以学到许多新的知识，在交换友链和相互关联的过程中也能认识到更多的大佬，使自己的认识促进到一个新的水平。
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+第五，还是因为我的记性太烂了，学到的东西忘的块，get到的新操作几天后就就知道丢去哪了，也忘了我是在哪里get到这个新操作的。而写博客呢在自己忘了的时候还可以倒回来看看之前写的，重新找回记忆。
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+第六，就是我的文笔实在太烂了，看到这里也许你也发现一些表述都是比较僵硬且病句一连片逻辑都是狗屁不通的句子，也请你的谅解和指出我的错误，能力都是一个慢慢提升的过程的嘛。
 
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+当我在博客发布了什么教程类或资源共享类的文章后，我可能转换文章同步到知乎，简书之类的平台，因为在21世纪前期除了能源外最重要的财付就是流量了（自己的理解），我也想尝试一下能否打造自己的IP，当然也不指望能出名毕竟我还是这么菜。在以后的文章中可能会因我现有认知水平的缺陷导致我说了一些幼稚或错误的话，所以也请大家多多指教。
