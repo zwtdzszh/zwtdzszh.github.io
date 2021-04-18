@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "张文涛的个人博客站"
+title                    : "张文涛的个人博客"
 title_separator          : "-"
 name                     : &name "张文涛"
-description              : &description "张文涛的个人博客站"
+description              : &description "张文涛的个人博客"
 url                      : https://zwtdzszh.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zwtdzszh/zwtdzszh.github.io"
