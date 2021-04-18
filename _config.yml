@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "Cn-CH"
-title                    : "张文涛的博客"
+title                    : "张文涛的个人博客站"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
